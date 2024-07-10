@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "297139002113",
+    "project_id": "melody-9d8d2",
+    "storage_bucket": "melody-9d8d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297139002113:android:9bec53b0d4d2cfd4359900",
+        "android_client_info": {
+          "package_name": "com.vanshpunia.melody"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7hPQr6WbSzjs5uFM20BHWpPTpgA1y5S8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
