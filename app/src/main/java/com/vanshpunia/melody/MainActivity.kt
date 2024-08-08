@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     var categoryList = ArrayList<Category>()
     lateinit var categoryAdaptor: CategoryAdaptor
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         window.statusBarColor = Color.BLACK

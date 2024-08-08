@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.Firebase
+import com.google.firebase.auth.auth
 import com.vanshpunia.melody.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
@@ -16,9 +18,16 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         window.statusBarColor = Color.BLACK
+
+
         Handler(Looper.getMainLooper()).postDelayed({
-            finish()
-            startActivity(Intent(this, SignUpActivity::class.java))
+            if(Firebase.auth.currentUser == null){
+                finish()
+                startActivity(Intent(this, SignUpActivity::class.java))
+            }else{
+                finish()
+                startActivity(Intent(this, MainActivity::class.java))
+            }
         }, 3000)
     }
 }

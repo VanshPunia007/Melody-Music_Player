@@ -2,8 +2,6 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Melody" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-         <item name="colorPrimary">@color/light_blue</item>
-        <item name="strokeColor">@color/light_blue</item>
     </style>
     <style name="toolbar_text">
 
