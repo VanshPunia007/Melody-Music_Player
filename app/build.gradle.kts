@@ -54,8 +54,19 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation ("com.google.firebase:firebase-bom:33.1.2")
+
     implementation ("com.github.bumptech.glide:glide:4.16.0")
+
     implementation ("com.squareup.picasso:picasso:2.8")
+    
     implementation ("de.hdodenhof:circleimageview:3.1.0")
+
     implementation("com.google.android.material:material:1.x.x")
+
+    implementation("androidx.media3:media3-exoplayer:1.4.0")
+    implementation("androidx.media3:media3-exoplayer-dash:1.4.0")
+    implementation("androidx.media3:media3-ui:1.4.0")
+
+    implementation("androidx.media3:media3-ui:1.0.0-rc01")
+
 }

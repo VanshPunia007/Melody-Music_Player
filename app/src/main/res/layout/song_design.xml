@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/dark_blue">
+    android:background="@color/dark_blue"
+    android:padding="5dp">
 
     <ImageView
         android:id="@+id/songCover"
         android:layout_width="60dp"
         android:layout_height="60dp"
+        android:layout_marginStart="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/vp_logo" />
