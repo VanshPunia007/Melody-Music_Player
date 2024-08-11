@@ -40,7 +40,7 @@ class SongListActivity : AppCompatActivity() {
     }
 
     private fun setSongs() {
-        songAdapter = SongAdapter(this@SongListActivity, category.songs)
+        songAdapter = SongAdapter(this@SongListActivity, category.songs, category.name)
         binding.songRV.adapter = songAdapter
         binding.songRV.layoutManager = LinearLayoutManager(this@SongListActivity)
         songAdapter.notifyDataSetChanged()
