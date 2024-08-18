@@ -20,7 +20,6 @@ class SongListActivity : AppCompatActivity() {
     companion object {
         lateinit var category: Category
     }
-    var songList = ArrayList<Song>()
 
     lateinit var songAdapter : SongAdapter
 
@@ -30,7 +29,7 @@ class SongListActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.categoryName.text = category.name
-        Glide.with(this).load(category.coverurl)
+        Glide.with(this).load(category.coverUrl)
             .apply(
                 RequestOptions().transform(RoundedCorners(32))
             )

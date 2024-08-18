@@ -29,7 +29,7 @@ class CategoryAdaptor(var context: Context, var categoryList: ArrayList<Category
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        Glide.with(context).load(categoryList.get(position).coverurl)
+        Glide.with(context).load(categoryList.get(position).coverUrl)
             .apply(
                 RequestOptions().transform(RoundedCorners(32))
             )
