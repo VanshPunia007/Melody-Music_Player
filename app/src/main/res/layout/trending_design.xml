@@ -7,9 +7,10 @@
 
     <ImageView
         android:id="@+id/songImage"
-        android:layout_width="125dp"
-        android:layout_height="110dp"
-        app:srcCompat="@drawable/logo" />
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_marginRight="5dp" />
 
     <TextView
         android:id="@+id/songName"

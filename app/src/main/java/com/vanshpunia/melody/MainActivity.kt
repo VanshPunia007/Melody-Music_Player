@@ -58,13 +58,16 @@ class MainActivity : AppCompatActivity() {
                     .into(binding.user)
             }
 
+        binding.user.setOnClickListener {
+            startActivity(Intent(this@MainActivity, ProfileActivity::class.java))
+        }
+
         setCategories()
         setSingers()
         setSection("trending", binding.trendingLayout, binding.trending, binding.trendingRv, binding.trendingHeader)
         setSection("podcasts", binding.podcastLayout, binding.podcast, binding.podcastRv, binding.podcastHeader)
         setSection("favourites", binding.favouriteLayout, binding.favourite, binding.favouriteRv, binding.favouriteHeader)
         setMostViewedSection("most_viewed", binding.mostViewedLayout, binding.mostViewed, binding.mostViewedRv, binding.mostViewedHeader)
-
 
     }
 

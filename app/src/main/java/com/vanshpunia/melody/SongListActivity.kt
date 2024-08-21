@@ -1,5 +1,6 @@
 package com.vanshpunia.melody
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -35,6 +36,10 @@ class SongListActivity : AppCompatActivity() {
             )
             .into(binding.categoryImage)
 
+        binding.backBtn.setOnClickListener {
+            startActivity(Intent(this@SongListActivity, MainActivity::class.java))
+            finish()
+        }
         setSongs()
     }
 
