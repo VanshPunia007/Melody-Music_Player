@@ -20,6 +20,11 @@ object MyExoPlayer {
         return currentSong
     }
 
+    fun releasePlayer() {
+        exoPlayer?.release()
+        exoPlayer = null
+    }
+
     fun startPlaying(context: Context, song: Song) {
         if (exoPlayer == null) {
             exoPlayer = ExoPlayer.Builder(context).build()

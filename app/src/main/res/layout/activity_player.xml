@@ -7,10 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".PlayerActivity"
     android:background="@color/dark_blue">
+<androidx.cardview.widget.CardView
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
+        android:background="@color/dark_blue"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,6 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:text="Category"
+            android:elevation="10dp"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -53,29 +63,34 @@
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+</androidx.cardview.widget.CardView>
+
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/songName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+        app:layout_constraintStart_toStartOf="@id/header"
+        app:layout_constraintTop_toBottomOf="@+id/header">
 
         <ImageView
             android:id="@+id/songImage"
-            android:layout_width="280dp"
-            android:layout_height="280dp"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
             android:layout_gravity="center"
+            android:elevation="10dp"
             app:srcCompat="@drawable/vp_logo" />
 
         <ImageView
             android:id="@+id/songImageGif"
-            android:layout_width="440dp"
-            android:layout_height="440dp"
+            android:layout_width="410dp"
+            android:layout_height="410dp"
             android:layout_gravity="center"
-            android:elevation="10dp"
+            android:elevation="5dp"
             android:visibility="invisible"
             app:srcCompat="@drawable/vp_logo" />
+
     </FrameLayout>
 
     <TextView
@@ -94,7 +109,7 @@
         android:id="@+id/singerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="10dp"
         android:text="TextView"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
@@ -115,7 +130,7 @@
         android:id="@+id/playerView"
         android:layout_width="0dp"
         android:layout_height="160dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="20dp"
         app:artwork_display_mode="off"
         app:auto_show="true"
         app:controller_layout_id="@layout/custom_player_control"

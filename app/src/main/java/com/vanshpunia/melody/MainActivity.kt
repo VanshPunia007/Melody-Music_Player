@@ -60,6 +60,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.user.setOnClickListener {
             startActivity(Intent(this@MainActivity, ProfileActivity::class.java))
+            finish()
         }
 
         setCategories()

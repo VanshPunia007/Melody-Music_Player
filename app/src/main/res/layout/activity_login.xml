@@ -12,7 +12,7 @@
         android:id="@+id/imageView5"
         android:layout_width="300dp"
         android:layout_height="290dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -29,8 +29,9 @@
         android:textColorHint="@color/white"
         app:hintTextColor="@color/light_blue"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5">
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -39,6 +40,7 @@
             android:visibility="visible" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password"
         android:layout_width="match_parent"
@@ -88,5 +90,16 @@
         app:layout_constraintStart_toStartOf="@+id/login_btn"
         app:strokeColor="@color/light_blue"
         app:strokeWidth="2.5dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/toolbar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in To Enjoy!!"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
